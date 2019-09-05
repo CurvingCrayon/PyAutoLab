@@ -1,0 +1,3 @@
+https://mediacdn.eu/mage/media/wysiwyg/siglent/Downloads/Command/SDG_Programming_Guide.pdf
+Basic wave commands:
+20 onwards

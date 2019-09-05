@@ -1,0 +1,2 @@
+python -m pip install --upgrade pip wheel setuptools virtualenv
+pip install pyview (py -m pip install pyview)
