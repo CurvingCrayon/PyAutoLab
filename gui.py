@@ -1,4 +1,5 @@
 import tkinter
+import easyGUI as EG
 from tkinter import ttk
 win = tkinter.Tk() 
 win.title("PyAutoLab")
@@ -13,4 +14,5 @@ tabs.pack(expand=1, fill="both")
 setupTab = ttk.Frame(tabs)
 tabs.add(setupTab, text = "Setup")
 tabs.pack(expand = 1, fill = "both")
+EG.lbl(win, "Test")
 win.mainloop()
