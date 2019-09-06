@@ -1,6 +1,7 @@
 import visa
 #import importlib
 import basicIn as b
+import time as t
 rm = visa.ResourceManager()
 print("Connected instruments")
 print(rm.list_resources())
@@ -19,6 +20,7 @@ while(run):
                 freq = start + step * cyc
                 print("Setting frequency: "+ str(freq))
                 inst.write("C1: BSWV FRQ, "+str(freq))
+                t.sleep(0.3)
     else:
         print("Invalid num")
         run = False
