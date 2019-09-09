@@ -1,0 +1,14 @@
+<frame dir='1'>
+    <frame dir='2'>
+        <label text='Start frequency:'></label>
+        <entry text='start' id='start'></entry>
+    </frame>
+    <frame dir='2'>
+        <label text='Stop frequency:'></label>
+        <entry text='stop' id='stop'></entry>
+    </frame>
+    <frame dir='2'>
+        <label text='# of points:'></label>
+        <entry text='num' id='num'></entry>
+    </frame>
+</frame>
