@@ -1,5 +1,6 @@
 # Code by Hayden Keers (September 2019)
 import tkinter
+import events
 import xml.etree.ElementTree as XML
 def render(master, element, num, direction):
     # master must always be a tkinter object
@@ -19,6 +20,9 @@ def render(master, element, num, direction):
         newCol = getCol(element, num)
     else: 
         newCol = getCol(element, 0)
+
+    if element.tag == "button":
+        tkElem.bind("<Button-1>",getattr(events, getAttr(element, "click")))
     tkElem.grid(row = newRow, column = newCol)
     elemNum = 0
     newDir = getDir(element, 0)
